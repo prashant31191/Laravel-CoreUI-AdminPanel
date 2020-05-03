@@ -8,4 +8,6 @@ Route::group(['prefix' => 'v1', 'as' => 'admin.', 'namespace' => 'Api\V1\Admin']
     Route::apiResource('users', 'UsersApiController');
 
     Route::apiResource('products', 'ProductsApiController');
+
+    Route::apiResource('subcategorys', 'SubcategorysApiController');
 });

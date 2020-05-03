@@ -52,6 +52,14 @@
                     {{ trans('global.product.title') }}
                 </a>
             </li>
+			<li class="nav-item">
+                <a href="{{ route("admin.subcategorys.index") }}" class="nav-link {{ request()->is('admin/subcategorys') || request()->is('admin/subcategorys/*') ? 'active' : '' }}">
+                    <i class="fas fa-cogs nav-icon">
+
+                    </i>
+                    {{ trans('global.subcategory.title') }}
+                </a>
+            </li>
             <li class="nav-item">
                 <a href="#" class="nav-link" onclick="event.preventDefault(); document.getElementById('logoutform').submit();">
                     <i class="nav-icon fas fa-sign-out-alt">
